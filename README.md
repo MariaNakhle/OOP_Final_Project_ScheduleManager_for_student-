@@ -1818,7 +1818,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ### 📜 MIT License Summary
 
 ```
-Copyright (c) 2025 Maria Nakhle
+Copyright (c) 2026 Maria Nakhle
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
