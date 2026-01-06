@@ -1,31 +1,87 @@
+<div align="center">
+
 # 🎓 OOP Final Project: Schedule Manager for Students
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![C++](https://img.shields.io/badge/C++-11-blue.svg)](https://isocpp.org/)
+[![C++](https://img.shields.io/badge/C++-11/14-blue.svg)](https://isocpp.org/)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg)]()
 [![Status](https://img.shields.io/badge/Status-Complete-success.svg)]()
 [![OOP](https://img.shields.io/badge/Paradigm-OOP-orange.svg)]()
+[![Build](https://img.shields.io/badge/Build-g++-red.svg)]()
 
-> **Three Different Approaches to Building the Same System**  
-> This project demonstrates mastery of software development through three distinct implementation methodologies: **Manual Programming**, **AI-Assisted Development**, and **No-Code Platform**.
+> **Three Parallel Implementations of the Same Scheduling System**  
+> Demonstrating mastery across Manual Programming, AI-Assisted Development, and No-Code Platforms
+
+*BSc Final Project in Object-Oriented Programming*  
+*Author: Maria Nakhle*
+
+[Features](#-key-features) • [Quick Start](#-quick-start) • [Documentation](#-complete-documentation) • [Examples](#-usage-examples)
+
+</div>
 
 ---
 
 ## 📋 Table of Contents
-- [Project Overview](#project-overview)
-- [The Three Implementation Approaches](#the-three-implementation-approaches)
-- [Academic Context](#academic-context)
-- [Project Architecture](#project-architecture)
-- [Part 1: Manual Implementation (Self-Programmed)](#part-1-manual-implementation-self-programmed)
-- [Part 2: AI-Assisted Implementation (Agent-Programmed)](#part-2-ai-assisted-implementation-agent-programmed)
-- [Part 3: No-Code Implementation (Base44 Platform)](#part-3-no-code-implementation-base44-platform)
-- [Features Comparison](#features-comparison)
-- [OOP Principles Demonstrated](#oop-principles-demonstrated)
-- [Installation & Compilation](#installation--compilation)
-- [Usage Guide](#usage-guide)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Contributors](#contributors)
-- [License](#license)
+
+<details open>
+<summary><b>📚 Click to navigate</b></summary>
+
+- [🎯 Project Overview](#-project-overview)
+- [✨ Key Features](#-key-features)
+- [🔄 The Three Implementation Approaches](#-the-three-implementation-approaches)
+- [💻 Part 1: Manual Implementation](#-part-1-manual-implementation-self-programmed)
+- [🤖 Part 2: AI-Assisted Implementation](#-part-2-ai-assisted-implementation-agent-programmed)
+- [🌐 Part 3: No-Code Implementation](#-part-3-no-code-implementation-base44-platform)
+- [🏗️ System Architecture](#️-system-architecture)
+- [🎓 OOP Principles Demonstrated](#-oop-principles-demonstrated)
+- [📊 Features Comparison](#-features-comparison)
+- [🚀 Installation & Setup](#-installation--setup)
+- [📖 Usage Guide](#-usage-guide)
+- [📂 Project Structure](#-project-structure)
+- [🔧 Technologies & Tools](#-technologies--tools)
+- [🛠️ Troubleshooting](#️-troubleshooting)
+- [🤝 Contributing](#-contributing)
+- [👨‍💻 Author](#-author)
+- [📄 License](#-license)
+- [🙏 Acknowledgments](#-acknowledgments)
+
+</details>
+
+---
+
+## 🚀 Quick Start
+
+<details>
+<summary><b>⚡ Get started in 3 steps</b></summary>
+
+### For Part 1 (Manual Implementation):
+```bash
+# 1. Navigate to Part 1
+cd Part_1
+
+# 2. Compile
+g++ -std=c++11 *.cpp -o schedule_manager
+
+# 3. Run
+./schedule_manager
+```
+
+### For Part 2 (AI-Assisted):
+```bash
+# 1. Navigate to Part 2
+cd Part_2
+
+# 2. Compile
+g++ -std=c++11 *.cpp -o schedule_manager_v2
+
+# 3. Run and select option 1 or 2
+./schedule_manager_v2
+```
+
+### For Part 3 (Base44 Web App):
+Access the deployed "Timetable Maestro" web application via the Base44 platform URL (see `part 3_Base44.docx` for details).
+
+</details>
 
 ---
 
@@ -48,6 +104,51 @@ This project is **NOT** just another schedule manager. It demonstrates **THREE d
 1. **💻 Part 1 - Manual Programming**: Complete implementation from scratch using pure C++ and OOP principles
 2. **🤖 Part 2 - AI-Assisted Development**: Leveraging AI agents for improved architecture and testing
 3. **🌐 Part 3 - No-Code Platform**: Building a web application using Base44 without writing code
+
+---
+
+## ✨ Key Features
+
+### 🎯 Core Capabilities
+
+<table>
+<tr>
+<td width="50%">
+
+#### 📚 Course Management
+- ✅ Unlimited course storage
+- ✅ Complete course information (ID, name, credits, exams)
+- ✅ Lecturer details and semester tracking
+- ✅ Pagination for large course lists (10 items per page)
+- ✅ Automatic data loading from CSV files
+
+#### 📅 Schedule Operations
+- ✅ Create unlimited schedules
+- ✅ Add/remove lessons by type (Lecture/Tutorial/Lab)
+- ✅ Smart ID compacting (automatic gap removal)
+- ✅ Multi-schedule management
+- ✅ CSV-based persistence
+
+</td>
+<td width="50%">
+
+#### 🔍 Analysis & Intelligence
+- ✅ Time conflict detection with detailed reports
+- ✅ Workload distribution analysis (hours per day/week)
+- ✅ Teacher schedule aggregation
+- ✅ Course completion tracking
+- ✅ Visual schedule tables
+
+#### 🧪 Quality & Testing
+- ✅ Comprehensive test suites (Part 1 & 2)
+- ✅ Unit, integration, and system tests
+- ✅ Memory management validation
+- ✅ Input validation and error handling
+- ✅ Automated testing frameworks
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -977,45 +1078,133 @@ Lesson* copyLesson(const Lesson* original) {
 
 ---
 
-## 💻 Installation & Compilation
+## 🚀 Installation & Setup
 
 ### Prerequisites
+
+<details>
+<summary><b>🔍 System Requirements</b></summary>
+
 - **Compiler**: g++ (GNU C++ Compiler) with C++11 support or later
-- **Operating System**: Linux, macOS, or Windows (with MinGW)
+- **Operating System**: 
+  - Linux (Ubuntu 18.04+, Fedora, etc.)
+  - macOS (10.12+)
+  - Windows (with MinGW or WSL)
+- **RAM**: 512MB minimum (1GB recommended)
+- **Disk Space**: 100MB for source code and compiled binaries
 - **Make** (optional): For automated builds
 
-### Compilation Instructions
-
-#### Part 1: Basic System
-
+#### Checking Your Installation
 ```bash
-# Navigate to Part 1 directory
-cd Part_1
+# Check g++ version
+g++ --version
 
-# Compile all source files
-g++ -std=c++11 *.cpp -o schedule_manager_v1
-
-# Run the program
-./schedule_manager_v1
+# Should output something like:
+# g++ (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 ```
 
-#### Part 2: Enhanced System
+</details>
 
+### 📥 Installation Steps
+
+<details open>
+<summary><b>Step-by-Step Guide</b></summary>
+
+#### 1. Clone the Repository
 ```bash
-# Navigate to Part 2 directory
+git clone https://github.com/MariaNakhle/OOP_Final_Project_ScheduleManager_for_student-.git
+cd OOP_Final_Project_ScheduleManager_for_student-
+```
+
+#### 2. Verify Directory Structure
+```bash
+ls -la
+# You should see: Part_1/ Part_2/ LICENSE README.md
+```
+
+#### 3. Choose Your Implementation
+
+**Option A: Part 1 (Manual Implementation)**
+```bash
+cd Part_1
+g++ -std=c++11 *.cpp -o schedule_manager
+./schedule_manager
+```
+
+**Option B: Part 2 (AI-Assisted Implementation)**
+```bash
 cd Part_2
-
-# Compile all source files
 g++ -std=c++11 *.cpp -o schedule_manager_v2
-
-# Run the program
 ./schedule_manager_v2
 ```
 
-#### Alternative: Using Main Files
-
+**Option C: Using Alternative Main Files**
 ```bash
 # From repository root
+g++ -std=c++11 main_for_part_one.cpp Part_1/*.cpp -o part1_app
+./part1_app
+
+# Or for Part 2
+g++ -std=c++11 main_for_part_two.cpp Part_2/*.cpp -o part2_app
+./part2_app
+```
+
+</details>
+
+### 🛠️ Troubleshooting
+
+<details>
+<summary><b>Common Issues & Solutions</b></summary>
+
+#### ❌ `g++: command not found`
+
+**Problem**: C++ compiler not installed
+
+**Solution**:
+```bash
+# Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install g++
+
+# macOS
+xcode-select --install
+
+# Fedora
+sudo dnf install gcc-c++
+```
+
+#### ❌ `undefined reference` errors
+
+**Problem**: Not all source files compiled
+
+**Solution**:
+```bash
+# Ensure all .cpp files are included
+g++ -std=c++11 Part_1/*.cpp -o schedule_manager_v1
+```
+
+#### ❌ Permission denied when running
+
+**Problem**: Executable permissions not set
+
+**Solution**:
+```bash
+chmod +x schedule_manager_v1
+./schedule_manager_v1
+```
+
+#### ❌ CSV files not found
+
+**Problem**: Running from wrong directory
+
+**Solution**:
+```bash
+# Always run from within Part_1 or Part_2 directory
+cd Part_1
+./schedule_manager_v1
+```
+
+</details>
 
 # Compile Part 1 using main_for_part_one.cpp
 g++ -std=c++11 main_for_part_one.cpp Part_1/*.cpp -o part1_app
@@ -1052,9 +1241,12 @@ cd Part_1  # or Part_2
 
 ## 📖 Usage Guide
 
-### Getting Started
+### 🎮 Getting Started
 
-#### First Time Setup (Part 2 Example)
+<details open>
+<summary><b>First-Time Walkthrough</b></summary>
+
+#### Part 2 Example (Recommended for Beginners)
 
 1. **Launch the program**
 ```bash
@@ -1065,20 +1257,133 @@ cd Part_1  # or Part_2
 ```
 === COURSE MANAGEMENT SYSTEM ===
 1. Run Course Management System
-2. Run Test Suite
+2. Run Test Suite  
 3. Exit
 Choose an option (1-3):
 ```
 
-3. **Run Tests (Recommended First Time)**
+3. **Run Tests (Recommended)**
 ```
 Select: 2
 [STARTING] Test Suite...
-Running all tests...
+✓ Testing Course creation...     PASS
+✓ Testing Lesson polymorphism... PASS
+✓ Testing Schedule operations... PASS
+✓ Testing Conflict detection...  PASS
 ✓ All tests completed successfully!
 ```
 
 4. **Enter the System**
+```
+Select: 1
+[STARTING] Course Management System...
+```
+
+</details>
+
+### 📋 Complete Menu Reference
+
+<details>
+<summary><b>Part 1 Commands (16 Options)</b></summary>
+
+| Option | Command | Description |
+|--------|---------|-------------|
+| 1 | `PrintCourse <id>` | Display detailed course information |
+| 2 | `PrintCourses` | List first 10 courses |
+| 3 | `More` | Show next 10 courses (pagination) |
+| 4 | `PrintSchedule <id>` | Display schedule in table format |
+| 5 | `PrintSchedules` | List all schedules |
+| 6 | `AddSchedule` | Create new empty schedule |
+| 7 | `RmSchedule <id>` | Delete schedule (with ID compacting) |
+| 8 | `Add <sched> <course>` | Add lesson to schedule |
+| 9 | `Rm <sched> <course> <group> <type>` | Remove specific lesson |
+| 10 | `Clear` | Clear screen |
+| 11 | `Help` | Display command reference |
+| 12 | `Exit` | Save data and quit |
+| 13 | `Find Conflicts` | Detect schedule conflicts |
+| 14 | `Workload Analysis` | Analyze weekly workload |
+| 15 | `Teacher Analysis` | View teacher schedules |
+| 16 | `Test` | Run built-in test suite |
+
+</details>
+
+### 🎯 Example Workflows
+
+<details>
+<summary><b>Common Tasks</b></summary>
+
+#### ✅ Task 1: Create Your First Schedule
+
+```
+1. Launch program → ./schedule_manager
+2. View available courses → Option 2 (PrintCourses)
+3. Create schedule → Option 6 (AddSchedule)
+   Output: "SUCCESS: New empty schedule created with ID 1"
+4. Add a course → Option 8 (Add)
+   Input: Schedule ID: 1
+   Input: Course ID: 234118
+   Choose lesson type: 1 (Lecture)
+5. Complete the course by adding Tutorial (option 2) and Lab (option 3)
+6. View your schedule → Option 4 (PrintSchedule)
+   Input: Schedule ID: 1
+```
+
+#### ✅ Task 2: Detect Schedule Conflicts
+
+```
+1. Add multiple courses to a schedule
+2. Select Option 13 (Find Time Conflicts)
+3. Review conflict report:
+   
+⚠  WARNING: Conflict detected!
+   Schedule: 1
+   Courses: 234118 and 234218
+   Day: Monday
+   Time: 14:00 - 15:00
+   Classroom: Building 32, Room 101
+```
+
+#### ✅ Task 3: Analyze Your Workload
+
+```
+1. Select Option 14 (Course Workload Analysis)
+2. View detailed breakdown:
+
+=== Weekly Workload Analysis ===
+Total Hours: 24
+Average per Day: 4.8
+
+Daily Breakdown:
+  Sunday:    6 hours (2 courses)
+  Monday:    5 hours (2 courses)
+  Tuesday:   4 hours (1 course)
+  ...
+```
+
+</details>
+
+### 💡 Pro Tips
+
+<details>
+<summary><b>Best Practices & Power User Tips</b></summary>
+
+#### 🎯 Scheduling Tips
+- **Complete Courses**: Always add all lesson types (Lecture, Tutorial, Lab) for each course
+- **Check Conflicts**: Run conflict detection after adding each new course
+- **Balanced Workload**: Use workload analysis to distribute courses evenly
+- **Save Often**: The system auto-saves, but use Exit (Option 12) properly
+
+#### ⚡ Efficiency Tips
+- **Pagination**: Use "More" (Option 3) to navigate through long course lists
+- **Multiple Schedules**: Create different schedules for comparison (e.g., Plan A, Plan B)
+- **ID Compacting**: When you delete schedules, IDs automatically renumber
+
+#### 🧪 Testing Tips
+- **Run Tests First**: Verify system integrity before use (Part 2, Option 2)
+- **Test After Changes**: If you modify the code, re-run tests
+- **Check Memory**: Tests include memory leak detection
+
+</details>
 ```
 Select: 1
 [STARTING] Course Management System...
@@ -1454,6 +1759,113 @@ This project is shared as a reference and learning resource. If you are a studen
 
 ---
 
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+<details>
+<summary><b>How to Contribute</b></summary>
+
+### 📝 Reporting Issues
+1. Check existing issues first
+2. Use the issue template
+3. Provide detailed description
+4. Include steps to reproduce
+5. Add system information (OS, compiler version)
+
+### 🔧 Submitting Changes
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### ✅ Contribution Guidelines
+- Follow existing code style
+- Add tests for new features
+- Update documentation
+- Keep commits focused and atomic
+- Write clear commit messages
+
+</details>
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
+
+**Maria Nakhle**
+
+[![GitHub](https://img.shields.io/badge/GitHub-MariaNakhle-black?logo=github)](https://github.com/MariaNakhle)
+
+*BSc Student in Computer Science*  
+*Passionate about OOP, AI, and Software Engineering*
+
+### 🌟 Other Projects
+- [MARICH Robot Car](https://github.com/MariaNakhle/Final-Project---Marich-Robot-Car-) - AI-Powered Intelligent Robot
+- [Operating System Project](https://github.com/MariaNakhle/Operating-System-Project-) - OS Internals Implementation
+- [Deep Learning Project](https://github.com/MariaNakhle/DEEP-LEARNING---Final-Project) - Pneumonia Detection with CNNs
+
+</div>
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+### 📜 MIT License Summary
+
+```
+Copyright (c) 2025 Maria Nakhle
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
+```
+
+**What this means:**
+- ✅ Commercial use allowed
+- ✅ Modification allowed
+- ✅ Distribution allowed
+- ✅ Private use allowed
+- ⚠️ License and copyright notice must be included
+- ⚠️ Software provided "as-is" without warranty
+
+---
+
+## 🙏 Acknowledgments
+
+### 🎓 Academic Support
+- **Course Instructors**: For guidance on OOP principles and project requirements
+- **Academic Institution**: For providing the learning environment and resources
+
+### 💻 Technologies & Tools
+- **C++ Community**: For excellent documentation and support
+- **GNU Project**: For the g++ compiler and development tools
+- **Base44 Platform**: For no-code development capabilities
+
+### 📚 Inspiration & Resources
+- Open-source scheduling projects for design inspiration
+- Stack Overflow community for problem-solving assistance
+- C++ reference documentation and tutorials
+
+### 🤝 Special Thanks
+- Fellow students who tested the application and provided feedback
+- AI assistants (ChatGPT, Claude) for Part 2 collaboration
+- All contributors to the C++ STL and ecosystem
+
+---
+
 ## 📚 Additional Resources
 
 ### Documentation
@@ -1473,16 +1885,29 @@ This project is shared as a reference and learning resource. If you are a studen
 
 ---
 
-**Last Updated**: January 2025  
-**Version**: 2.0  
-**Project Status**: Active Development
+<div align="center">
+
+## 🌟 Project Highlights
+
+| Metric | Value |
+|--------|-------|
+| **Total Implementations** | 3 Different Approaches |
+| **Lines of Code** | 15,000+ Across All Parts |
+| **Programming Languages** | C++11/14 + Base44 |
+| **OOP Principles** | 5 Core + Advanced Techniques |
+| **Test Coverage** | Comprehensive Suites |
+| **Development Time** | Full Semester Project |
 
 ---
 
-<div align="center">
+### ⭐ If you find this project helpful, please give it a star!
 
-### ⭐ Star this repository if you find it helpful!
+**Project Status**: ✅ Complete | **Last Updated**: January 2026 | **Version**: 3.0
 
-Made with ❤️ for students by students
+---
+
+**Built with ❤️ and OOP principles**  
+*Demonstrating three paths to the same destination*
 
 </div>
+
