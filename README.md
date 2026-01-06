@@ -66,7 +66,7 @@ This assignment required implementing the same Schedule Manager system using **t
 | **Control Level** | Maximum control | High control | Limited to platform |
 | **Deployment** | Command-line app | Command-line app | Web app (hosted) |
 | **Best For** | Learning OOP deeply | Professional projects | Quick MVPs |
-| **Lines of Code** | ~9,000+ lines | ~6,000+ lines | 0 lines |
+| **Lines of Code** | ~9,000+ lines (approx) | ~6,000+ lines (approx) | 0 lines |
 | **Testing** | Manual + built-in suite | Comprehensive test framework | Platform-managed |
 
 ### 📊 Visual Comparison
@@ -601,6 +601,8 @@ Part 3 represents a **completely different approach** to building the same Sched
 **What is Base44?**  
 Base44 is an AI-powered no-code platform that builds web applications through natural language conversations. You describe what you want, and the AI generates the entire application - database, frontend, backend, and deployment.
 
+> **Note:** The specific features and capabilities described for Base44 are based on the assignment documentation (`part 3_Base44.docx`). Features may vary based on the platform version and subscription tier used.
+
 ### 🚀 The "Timetable Maestro" Application
 
 The Base44 implementation, branded as **"Timetable Maestro"**, includes all the functionality of Parts 1 and 2, but delivered as a **modern web application**:
@@ -747,8 +749,6 @@ Detailed information about the Base44 implementation is available in `part 3_Bas
 - User workflows
 - System architecture diagrams
 - Deployment details
-
----
 
 ---
 
